@@ -8,5 +8,5 @@
 [articles_photography] : Affiche les articles photography .\
 [article_typography] : Affiche les articles typography .\
 [les_articles] : Affiche tous les articles .\
-[les_articles_last] : Affiche les 5 dernier articles publier .\
+[les_articles_last] : Affiche les 5 dernier articles publier .
 
