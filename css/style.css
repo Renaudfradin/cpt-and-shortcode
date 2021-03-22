@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+.read-more{
+    display: none;
+}
+
+.liste_mentor{
+    display: inline-block;
+    width: 24%;
+    border: 0px solid;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px #ccc;
+    margin: 4px 2px 4px 4px;
+    padding: 2em;
+}
+
+.nom_mentor{
+    color: #242424 !important;
+    font-size: 1.5rem !important;
+    margin-bottom: 0px !important;
+}
+
+.category_mentor{
+    background: #FAE5EE;
+    color: #C64D81;
+    width: 60%;
+    text-align: center;
+    margin-top: 0.8em;
+    border-radius: 10px;
+}
+
+.description_mentor{
+    color: #242424 !important;
+}
+
+.icon_reseaux{
+    transition: 0.3s all ease-in-out;
+}
+
+.icon_reseaux:hover{
+    transform: translateY(-8px);
+}
