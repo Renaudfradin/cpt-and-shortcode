@@ -12,6 +12,7 @@
     box-shadow: 0px 0px 5px #ccc;
     margin: 4px 2px 4px 4px;
     padding: 2em;
+    text-align: center;
 }
 
 .nom_mentor{
@@ -31,6 +32,15 @@
 
 .description_mentor{
     color: #242424 !important;
+    text-align: left;
+    line-height: 1.4em;
+    font-size: 0.95rem;
+}
+
+.image_mentor{
+    width: 8em;
+    border-radius: 50% !important;
+    margin-bottom: 1em;
 }
 
 .icon_reseaux{
@@ -39,4 +49,24 @@
 
 .icon_reseaux:hover{
     transform: translateY(-8px);
+}
+
+/* media queries */
+
+@media screen and (min-width: 0px) and (max-width: 475px){
+    .liste_mentor{
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 476px) and (max-width: 767px){
+    .liste_mentor{
+        width: 48%
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1049px){
+    .liste_mentor{
+        width: 32%
+    }
 }

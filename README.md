@@ -1,6 +1,14 @@
 # cpt-and-shortcode
-### Extension wordpress qui rajoute des custom post type est des shortcodes.
+### Extension wordpress qui rajoute des Custom Post Type est des shortcodes.
 ### L'extension Advanced Custom Fields est obligatoire.
+
+### Listes des Custom Post Type:
+Mentors .\
+Articles_design_ux_ui .\
+Article_illustrations .\
+Articles_photographys .\
+Articles_typographys .\
+
 ### Listes des shortcode:
 [les_mentors] : Affiche les mentors .\
 [les_articles_design_ui_ux] : Affiche les articles design_ui_ux .\

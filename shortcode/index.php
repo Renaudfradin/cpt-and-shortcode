@@ -20,10 +20,10 @@ function get_metors(){
 			$custom_query->the_post();
 			?>
 			<div class="liste_mentor">
-				<img src="<?php the_post_thumbnail_url(); ?>" class="">
-				<h2 class="nom_mentor"><?php the_title(); ?></h2>
+				<img class="image_mentor" src="<?php the_post_thumbnail_url(); ?>" class="">
+				<h2 class="nom_mentor"><?php the_title($before = '', $after = '',$echo = true ); ?></h2>
 				<p class="category_mentor"><?php the_field( 'category' ); ?></p>
-				<p class="description_mentor"><?php the_excerpt(); ?></p>
+				<div class="description_mentor"><?php the_excerpt();?></div>
 				<?php 
 				if (!get_field( 'reseaux1ytb' ) == null) {
 					?>
@@ -95,7 +95,7 @@ function get_les_articles_design_ui_ux(){
 			?>
 			<div class="article-extrait">
 				<h2><?php the_title(); ?></h2>
-				<p><?php the_excerpt(); ?></p>
+				<div><?php the_excerpt(); ?></div>
 				<img src="<?php the_post_thumbnail_url(); ?>" class="">
 				<a href="<?php the_permalink(); ?>">Lire plus</a>		
 			</div>
@@ -148,7 +148,7 @@ function get_article_illustration(){
 			?>
 			<div class="article-extrait">
 				<h2><?php the_title(); ?></h2>
-				<p><?php the_excerpt(); ?></p>
+				<div><?php the_excerpt(); ?></div>
 				<img src="<?php the_post_thumbnail_url(); ?>" class="">
 				<a href="<?php the_permalink(); ?>">Lire plus</a>		
 			</div>
@@ -200,7 +200,7 @@ function get_articles_photography(){
 			?>
 			<div class="article-extrait">
 				<h2><?php the_title(); ?></h2>
-				<p><?php the_excerpt(); ?></p>
+				<div><?php the_excerpt(); ?></div>
 				<img src="<?php the_post_thumbnail_url(); ?>" class="">
 				<a href="<?php the_permalink(); ?>">Lire plus</a>		
 			</div>
@@ -252,7 +252,7 @@ function get_article_typography(){
 			?>
 			<div class="article-extrait">
 				<h2><?php the_title(); ?></h2>
-				<p><?php the_excerpt(); ?></p>
+				<div><?php the_excerpt(); ?></div>
 				<img src="<?php the_post_thumbnail_url(); ?>" class="">
 				<a href="<?php the_permalink(); ?>">Lire plus</a>		
 			</div>
@@ -305,7 +305,7 @@ function get_articles(){
 			?>
 			<div class="article-extrait">
 				<h2><?php the_title(); ?></h2>
-				<p><?php the_excerpt(); ?></p>
+				<div><?php the_excerpt(); ?></div>
 				<img src="<?php the_post_thumbnail_url(); ?>" class="">
 				<a href="<?php the_permalink(); ?>">Lire plus</a>		
 			</div>
@@ -357,7 +357,7 @@ function get_articles_last(){
 			?>
 			<div class="article-extrait">
 				<h2><?php the_title(); ?></h2>
-				<p><?php the_excerpt(); ?></p>
+				<div><?php the_excerpt(); ?></div>
 				<img src="<?php the_post_thumbnail_url(); ?>" class="">
 				<a href="<?php the_permalink(); ?>">Lire plus</a>		
 			</div>
