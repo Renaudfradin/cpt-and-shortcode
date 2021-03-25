@@ -42,7 +42,7 @@ function get_metors(){
 				}
 				if (!get_field( 'reseaux4dribbble' ) == null) {
 					?>
-					<a href="<?php get_field( 'reseaux4' );?>"><img class="icon_reseaux" src="http://localhost:8888/wordpress2/wp-content/uploads/2021/03/icon_dribbble.png" alt="dribbble"></a>
+					<a href="<?php the_field( 'reseaux4dribbble' );?>"><img class="icon_reseaux" src="http://localhost:8888/wordpress2/wp-content/uploads/2021/03/icon_dribbble.png" alt="dribbble"></a>
 					<?php
 				}
 				?>
