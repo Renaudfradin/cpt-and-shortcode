@@ -80,7 +80,7 @@ function get_les_articles_design_ui_ux(){
 	$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1; 
 	$custom_args = array( 
 		'post_type' => 'article_design_ux_ui',
-		'posts_per_page' => 5,
+		'posts_per_page' => 8,
 		'post_status' => ' published',
 		'order_by' => 'post_date',
 		'order' => 'DESC',
@@ -93,11 +93,16 @@ function get_les_articles_design_ui_ux(){
 		while ($custom_query->have_posts() ) {
 			$custom_query->the_post();
 			?>
-			<div class="article-extrait">
-				<h2><?php the_title(); ?></h2>
-				<p><?php the_excerpt(); ?></p>
-				<img src="<?php the_post_thumbnail_url(); ?>" class="">
-				<a href="<?php the_permalink(); ?>">Lire plus</a>		
+			<div class="article-category">
+				<div class="conteneur_image_last">
+						<img src="<?php the_post_thumbnail_url(); ?>" class="image_last_article">
+				</div>
+				<div class="texte_last_article">
+						<h2 class="titre_last_article"><?php the_title(); ?></h2>
+						<p class="category_article category_pink"><?php the_field( 'category' ); ?></p>
+						<div class="description_last_article"><?php the_excerpt(); ?></div>
+						<a class="lien_last_article" href="<?php the_permalink(); ?>">Voir l'article</a>    
+				</div>    
 			</div>
 			<?php
 		}
