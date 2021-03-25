@@ -2,7 +2,7 @@
 /*
   Plugin Name: cpt-and-shortcode
   Plugin URI: https://wp-groupe10.azurewebsites.net/
-  Description:L'extension Advanced Custom Fields est obligatoire C'est un plungins qui regroupe les custompost type et les shortcode shortcode : [les_mentors],[les_articles_design_ui_ux],[article_illustration],[articles_photography],[article_typography],[les_articles],[[les_articles_last]]. 
+  Description:L'extension Advanced Custom Fields est obligatoire C'est un plungins qui regroupe les custompost type et les shortcode shortcode : [les_mentors],[les_articles_design_ui_ux],[article_illustration],[articles_photography],[article_typography],[les_articles],[les_articles_last],[3_articles_design],[3_articles_typography],[3_articles_illustration],[3_articles_photography]. 
   Author: Groupe10
   Author URI: https://wp-groupe10.azurewebsites.net/
   Version: 1.0
