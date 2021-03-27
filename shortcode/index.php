@@ -24,6 +24,7 @@ function get_metors(){
 				<h2 class="nom_mentor"><?php the_title(); ?></h2>
 				<p class="category_mentor"><?php the_field( 'category' ); ?></p>
 				<div class="description_mentor"><?php the_excerpt(); ?></div>
+				<div class="liste_reseaux">
 				<?php 
 				if (!get_field( 'reseaux1ytb' ) == null) {
 					?>
@@ -46,6 +47,7 @@ function get_metors(){
 					<?php
 				}
 				?>
+				</div>
 			</div>
 			<?php
 		}
@@ -138,7 +140,7 @@ function get_article_illustration(){
 	$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1; 
 	$custom_args = array( 
 		'post_type' => 'article_illustration',
-		'posts_per_page' => 5,
+		'posts_per_page' => 8,
 		'post_status' => ' published',
 		'order_by' => 'post_date',
 		'order' => 'DESC',
@@ -151,11 +153,16 @@ function get_article_illustration(){
 		while ($custom_query->have_posts() ) {
 			$custom_query->the_post();
 			?>
-			<div class="article-extrait">
-				<h2><?php the_title(); ?></h2>
-				<p><?php the_excerpt(); ?></p>
-				<img src="<?php the_post_thumbnail_url(); ?>" class="">
-				<a href="<?php the_permalink(); ?>">Lire plus</a>		
+			<div class="article-category">
+				<div class="conteneur_image_last">
+						<img src="<?php the_post_thumbnail_url(); ?>" class="image_last_article">
+				</div>
+				<div class="texte_last_article">
+						<h2 class="titre_last_article"><?php the_title(); ?></h2>
+						<p class="category_article category_blue"><?php the_field( 'category' ); ?></p>
+						<div class="description_last_article"><?php the_excerpt(); ?></div>
+						<a class="lien_last_article" href="<?php the_permalink(); ?>">Voir l'article</a>    
+				</div>    
 			</div>
 			<?php
 		}
@@ -190,7 +197,7 @@ function get_articles_photography(){
 	$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1; 
 	$custom_args = array( 
 		'post_type' => 'articles_photography',
-		'posts_per_page' => 5,
+		'posts_per_page' => 8,
 		'post_status' => ' published',
 		'order_by' => 'post_date',
 		'order' => 'DESC',
@@ -203,11 +210,16 @@ function get_articles_photography(){
 		while ($custom_query->have_posts() ) {
 			$custom_query->the_post();
 			?>
-			<div class="article-extrait">
-				<h2><?php the_title(); ?></h2>
-				<p><?php the_excerpt(); ?></p>
-				<img src="<?php the_post_thumbnail_url(); ?>" class="">
-				<a href="<?php the_permalink(); ?>">Lire plus</a>		
+			<div class="article-category">
+				<div class="conteneur_image_last">
+						<img src="<?php the_post_thumbnail_url(); ?>" class="image_last_article">
+				</div>
+				<div class="texte_last_article">
+						<h2 class="titre_last_article"><?php the_title(); ?></h2>
+						<p class="category_article category_yellow"><?php the_field( 'category' ); ?></p>
+						<div class="description_last_article"><?php the_excerpt(); ?></div>
+						<a class="lien_last_article" href="<?php the_permalink(); ?>">Voir l'article</a>    
+				</div>    
 			</div>
 			<?php
 		}
@@ -242,7 +254,7 @@ function get_article_typography(){
 	$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1; 
 	$custom_args = array( 
 		'post_type' => 'article_typography',
-		'posts_per_page' => 5,
+		'posts_per_page' => 8,
 		'post_status' => ' published',
 		'order_by' => 'post_date',
 		'order' => 'DESC',
@@ -255,11 +267,16 @@ function get_article_typography(){
 		while ($custom_query->have_posts() ) {
 			$custom_query->the_post();
 			?>
-			<div class="article-extrait">
-				<h2><?php the_title(); ?></h2>
-				<p><?php the_excerpt(); ?></p>
-				<img src="<?php the_post_thumbnail_url(); ?>" class="">
-				<a href="<?php the_permalink(); ?>">Lire plus</a>		
+			<div class="article-category">
+				<div class="conteneur_image_last">
+						<img src="<?php the_post_thumbnail_url(); ?>" class="image_last_article">
+				</div>
+				<div class="texte_last_article">
+						<h2 class="titre_last_article"><?php the_title(); ?></h2>
+						<p class="category_article category_purple"><?php the_field( 'category' ); ?></p>
+						<div class="description_last_article"><?php the_excerpt(); ?></div>
+						<a class="lien_last_article" href="<?php the_permalink(); ?>">Voir l'article</a>    
+				</div>    
 			</div>
 			<?php
 		}

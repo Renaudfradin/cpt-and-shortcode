@@ -25,7 +25,15 @@ include("custom-post-type/index.php");
  */
 include("shortcode/index.php");
 
+/**
+ * les articles
+ */
+include("article/index.php");
+
+
 function mytheme_post_thumbnails() {
   add_theme_support( 'post-thumbnails' );
 }
 add_action( 'after_setup_theme', 'mytheme_post_thumbnails' );
+
+define( 'WP_POST_REVISIONS', false );

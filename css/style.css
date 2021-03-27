@@ -19,6 +19,8 @@ html {
     margin: 4px 2px 4px 4px;
     padding: 2em;
     text-align: center;
+    height: 27em;
+    vertical-align: top;
 }
 
 .nom_mentor{
@@ -41,6 +43,8 @@ html {
     text-align: left;
     line-height: 1.4em;
     font-size: 0.95rem;
+    max-height: 100%;
+    height: 8em;
 }
 
 .image_mentor{
@@ -873,3 +877,107 @@ html {
     }
 
 }
+
+
+/* CSS Articles individuelle */
+
+.entry-header,
+.article_illustration,
+.article_design_ux_ui,
+.article_typography,
+.articles_photography{
+    display: none;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8em;
+}
+
+.article_image{
+    width: 50em;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.avatar {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin: -2.6em auto 0 auto;
+    border: 2px solid #fffefe;
+}
+
+.nom_auteur{
+    margin: 0.2em auto 2.6em auto;
+    font-size: 1.2rem;
+    color: #242424;
+}
+
+.date_article{
+    margin: -4.3em auto 3.3em auto;
+    font-size: 0.8rem;
+    color: #242424;
+}
+
+.categorie_article{
+    margin-bottom: 1em;
+    padding: 5px;
+    width: 10em;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid #fffefe;
+}
+
+.categorie_design{
+    background: #C64D81;
+    color: #fffefe;
+}
+
+.categorie_typography{
+    background: #824DC6;
+    color: #fffefe;
+}
+
+.categorie_illustration{
+    background: #4DA9C6;
+    color: #fffefe;
+}
+
+.categorie_photography{
+    background: #FF9C07;
+    color: #fffefe;
+}
+
+.article_contenu{
+    color: #242424;
+}
+
+.article_titre{
+    text-align: center;
+}
+
+.article_description{
+    margin-top: 2em;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 475px){
+    .categorie_article{
+        margin: -2.3em auto 3.6em auto;
+        font-size: 1rem;
+        padding: 2px;
+    }
+
+    .article_titre {
+        text-align: left;
+        padding: 0 0.5em;
+    }
+
+    .article_description {
+        padding: 0 0.5em;
+    }
+}
+
